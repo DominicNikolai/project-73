@@ -28,7 +28,12 @@ body {
 .airbrush-effect {
   position: relative;
   overflow: hidden;
+  height: 100vh;
+  background-image: url('assets/fondo.avif');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .airbrush-effect:after {
   display: block;
   content: '';
