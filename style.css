@@ -23,8 +23,21 @@ body {
   width: 100%;
   background: #000;
   overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  place-content: center;
 }
 
+.airbrush-effect {
+  position: relative;
+  overflow: hidden;
+}
+.airbrush-effect:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: brightness(1.5) saturate(100) blur(5px) contrast(5);
+  mix-blend-mode: multiply;
+}
